@@ -18,12 +18,10 @@ public class ClosedState implements AccountState{
     }
 
     public void activate(Account account){
-        account.setState(new ActiveState());
-        System.out.println("Account is Activated!");
+        System.out.println("Cannot Activate Closed Account");
     }
 
     public void close(Account account){
-        account.setState(new ClosedState());
         System.out.println("Account is already Closed!");
     }
 }

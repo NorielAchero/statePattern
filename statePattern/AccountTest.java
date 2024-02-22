@@ -27,17 +27,14 @@ public class AccountTest{
 
         System.out.println();
 
-        myAccount.withdraw(500.0);
-
-        System.out.println();
-
 		myAccount.activate(); 
 
         System.out.println();
 
-		myAccount.activate();
+		myAccount.suspend();
 
         System.out.println();
+
 
         myAccount.withdraw(500.0);
 

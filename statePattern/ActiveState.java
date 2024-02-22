@@ -3,7 +3,7 @@ public class ActiveState implements AccountState{
 
 
     public void deposit(Double depositAmount, Account account){
-        
+        System.out.println("Old Balance: " + account.balance + " Deposited Amount: " + depositAmount);
         account.balance = account.balance + depositAmount;
         System.out.println("Account Deposited");
         account.toString();
@@ -11,7 +11,9 @@ public class ActiveState implements AccountState{
 
 
     public void withdraw(Double withdrawAmount, Account account){
+        System.out.println("Old Balance: " + account.balance + " Withdrawn Amount: " + withdrawAmount);
         account.balance = account.getBalance() - withdrawAmount;
+
         System.out.println("Account Withdraw");
         account.toString();
     }
